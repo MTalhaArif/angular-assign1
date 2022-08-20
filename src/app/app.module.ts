@@ -10,8 +10,9 @@ import { ContactComponent } from './contact/contact.component';
 import { AddcontactComponent } from './addcontact/addcontact.component';
 import { StatusComponent } from './status/status.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //import { AccessRoutingModule } from './access/access-routing.module';
-
+import{HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,9 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule //for two way binding
+    FormsModule,
+    BrowserAnimationsModule, //for two way binding
+    HttpClientModule
   //  LoginComponent,
     //AccessRoutingModule
   ],
